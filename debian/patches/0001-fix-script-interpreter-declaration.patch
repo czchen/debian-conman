@@ -1,0 +1,19 @@
+From: Yao-Po Wang <blue119@gmail.com>
+Date: Mon, 28 Apr 2013 23:04:29 +0800
+Subject: fix script interpreter declaration
+Description: fix script interpreter declaration
+
+--- a/lib/alpha.exp
++++ b/lib/alpha.exp
+@@ -1,3 +1,4 @@
++#!/usr/bin/expect --
+ #******************************************************************************
+ # Alpha Library Functions (ALF)
+ #******************************************************************************
+--- a/lib/conman.exp
++++ b/lib/conman.exp
+@@ -1,3 +1,4 @@
++#!/usr/bin/expect --
+ #******************************************************************************
+ # ConMan Expect Language Library (CELL)
+ #******************************************************************************
