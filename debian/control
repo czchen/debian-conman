@@ -1,20 +1,52 @@
 Source: conman
-Section: unknown
+Section: comm
 Priority: optional
 Maintainer: Yao-Po Wang <blue119@gmail.com>
-Build-Depends: debhelper (>= 9), autotools-dev
+Build-Depends:
+    debhelper (>= 9),
+    autotools-dev,
+    libfreeipmi-dev (>= 1.0.4),
+    libipmiconsole-dev,
+    libwrap0-dev
 Standards-Version: 3.9.6
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://anonscm.debian.org/collab-maint/conman.git
-#Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/conman.git;a=summary
+Homepage: https://github.com/dun/conman
+Vcs-Git: https://github.com/dun/conman.git
+Vcs-Browser: https://github.com/dun/conman
 
 Package: conman
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: serial console management program
+ ConMan is a serial console management program designed to support a large
+ number of console devices and simultaneous users.
+ It supports:
+     - local serial devices
+     - remote terminal servers (via the telnet protocol)
+     - IPMI Serial-Over-LAN (via FreeIPMI)
+     - Unix domain sockets
+     - external processes (e.g., using Expect for telnet / ssh / ipmi-sol
+             connections)
+ Its features include:
+     - logging (and optionally timestamping) console device output to file
+     - connecting to consoles in monitor (R/O) or interactive (R/W) mode
+     - allowing clients to share or steal console write privileges
+     - broadcasting client output to multiple consoles
 
 Package: conman-doc
 Architecture: all
-Description: documentation for conman
- <insert long description, indented with spaces>
+Description: serial console management program (documentation)
+ ConMan is a serial console management program designed to support a large
+ number of console devices and simultaneous users.
+ It supports:
+     - local serial devices
+     - remote terminal servers (via the telnet protocol)
+     - IPMI Serial-Over-LAN (via FreeIPMI)
+     - Unix domain sockets
+     - external processes (e.g., using Expect for telnet / ssh / ipmi-sol
+             connections)
+ Its features include:
+     - logging (and optionally timestamping) console device output to file
+     - connecting to consoles in monitor (R/O) or interactive (R/W) mode
+     - allowing clients to share or steal console write privileges
+     - broadcasting client output to multiple consoles
+

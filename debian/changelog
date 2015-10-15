@@ -1,5 +1,5 @@
 conman (0.2.7-1) unstable; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release (Closes: 801788)
 
  -- Yao-Po Wang <blue119@gmail.com>  Wed, 14 Oct 2015 23:05:17 +0800
