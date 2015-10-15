@@ -1,0 +1,78 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "CONMEN" "1" "April 2014" "" ""
+.
+.SH "NAME"
+\fBconmen\fR \- a wrapper to aid in ConMan broadcast sessions
+.
+.SH "SYNOPSIS"
+.
+.nf
+
+`conmen` [OPTIONS] [CONSOLES]
+.
+.fi
+.
+.SH "DESCRIPTION"
+conmen(1) spawns an xterm for each of the selected consoles and uses the current tty as the broadcast window\.
+.
+.P
+All of the spawned xterm clients are terminated when the broadcast window session is closed\.
+.
+.SH "OPTIONS"
+.
+.nf
+
+* `\-d` HOST
+    Specify server destination\.
+
+* `\-e` CHAR
+    Specify escape character\.
+
+* `\-f`
+    Force connections (console\-stealing)\.
+
+* `\-g` QUERY
+    Specify nodes matching a genders nodeattr query\.
+
+* `\-G` SIZE
+    Specify xterm geometry (eg, 80x24)\.
+
+* `\-h`
+    Display this help\.
+
+* `\-j`
+    Join connections (console\-sharing)\.
+
+* `\-L`
+    Display license information\.
+
+* `\-m`
+    Monitor connections (read\-only)\.
+
+* `\-q`
+    Query server about specified console(s)\.
+
+* `\-r`
+    Match console names via regex instead of globbing\.
+
+* `\-V`
+    Display version information\.
+.
+.fi
+.
+.SH "AUTHOR"
+Chris Dunlap \fIcdunlap@llnl\.gov\fR
+.
+.SH "COPYRIGHT"
+Copyright (C) 2007\-2013 Lawrence Livermore National Security, LLC\.
+.
+.P
+Copyright (C) 2001\-2007 The Regents of the University of California\.
+.
+.P
+UCRL\-CODE\-2002\-009\.
+.
+.SH "SEE ALSO"
+conman(1), conman\.conf(5), conmand(8)
