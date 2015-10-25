@@ -10,8 +10,8 @@ Build-Depends:
     libwrap0-dev,
 Standards-Version: 3.9.6
 Homepage: https://github.com/dun/conman
-Vcs-Git: https://github.com/dun/conman.git
-Vcs-Browser: https://github.com/dun/conman
+Vcs-Git: https://github.com/blue119/conman-debian.git
+Vcs-Browser: https://github.com/blue119/conman-debian
 
 Suggests: expect
 Package: conman
