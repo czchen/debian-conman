@@ -13,8 +13,8 @@ Homepage: https://github.com/dun/conman
 Vcs-Git: https://github.com/blue119/conman-debian.git
 Vcs-Browser: https://github.com/blue119/conman-debian
 
-Suggests: expect
 Package: conman
+Suggests: expect
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: serial console management program
