@@ -1,0 +1,10 @@
+[Unit]
+Description=serial console management program
+Documentation=man:conman(8)
+
+[Service]
+ExecStart=/usr/sbin/conmand -F
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
