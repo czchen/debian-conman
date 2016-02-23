@@ -1,3 +1,9 @@
+conman (0.2.7-1~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports.
+
+ -- Vincent Danjean <vdanjean@debian.org>  Tue, 23 Feb 2016 12:32:08 +0100
+
 conman (0.2.7-1) unstable; urgency=low
 
   * Initial release (Closes: 801788)
